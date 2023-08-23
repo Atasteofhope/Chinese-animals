@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Animals</title>
+    <script src="https://kit.fontawesome.com/961a72e5a9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav-mobile">
+                    <a id="hamburger-icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                    
+                    <a id="language-icon" class="lang-icon">
+                        <i class="fa-sharp fa-solid fa-globe"></i>
+                    </a>
+
+                    <ul id="lang-ul" class="lang-ul">
+                        <li id="eng-button" class="active">English</li>
+                        <li id="esp-button">Español</li>
+                    </ul>
+                </div>
+
+                <ul id="nav-ul">
+                    <li><a href="animals.asp" class="current-page">Animals</a></li>
+                    <li><a href="numbers.asp">Numbers</a></li>
+                    <li><a href="days.asp">Days</a></li>
+                    <li><a href="numbers.asp">Colors</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main">
+        <h1 id="animal-title-face" class="question-side"></h1>
+        <div id="animals-output" class="app-output">
+            <div id="image-container" class="image-cont">
+                <img src="" alt="" id="image" class="animal-image">
+            </div>
+            <h1 id="animal-title-back"></h1>
+            <p id="pinyin-title" class="pinyin-paragraph"></p>
+            <p id="english-name" class="english-paragraph"></p>
+        </div>
+        <div id="buttons-element" class="global-buttons">
+            <div class="all-buttons">
+                <button id="first-button" aria-label="choose-first"></button>
+                <button id="second-button" aria-label="choose-second"></button>
+                <button id="third-button" aria-label="choose-third"></button>
+                
+            </div>
+
+            <div class="all-buttons">
+                <button id="fourth-button" aria-label="choose-fourth"></button>
+                <button id="fifth-button" aria-label="choose-fifth"></button>
+                <button id="sixth-button" aria-label="choose-sixth"></button>
+        
+            </div>
+
+            <div class="all-buttons">
+                <button class="next-button" id="ok-button" aria-label="Go-next"></button>
+            </div>
+
+            <div class="all-buttons">
+                <button class="next-button yellow-button" id="continue-button" aria-label="Go-next"></button>
+            </div>
+        </div>
+
+            <div id="correct-element" class="correct-message">
+                <p>CORRECT!</p>
+                <p><i class="fa-regular fa-circle-check"></i></p>
+            </div>
+
+            <div id="incorrect-element" class="incorrect-message">
+                <p>INCORRECT!</p>
+                <p><i class="fa-regular fa-circle-xmark"></i></p>
+            </div>
+
+            <div id="alert-element" class="alert-message">
+                <p class="alert-paragraph">Please select something!</p>
+            </div>
+       
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
