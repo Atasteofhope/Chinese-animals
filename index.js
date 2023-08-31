@@ -25,7 +25,8 @@ const engButton = document.getElementById('eng-button')
 let randNum
 let ranArray
 let numbersArr = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,
-                18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33]
+                18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,
+                34,35,36,37,38,39,40,41,42,43,44,45,46,47,48]
 let allButtons = [ ]
 let firstBtnValue
 let secondBtnValue
@@ -67,7 +68,7 @@ const animals = [{
 },
 {
     "cName": "蝙蝠",
-    "pinyin": "Biānfú",
+    "pinyin": "Biān fú",
     "eName": "Bat",
     "aniImage": "img/bat.jpg" 
 },
@@ -79,7 +80,7 @@ const animals = [{
 },
 {
     "cName": "蜜蜂",
-    "pinyin": "Mìfēng",
+    "pinyin": "Mì fēng",
     "eName": "Bee",
     "aniImage": "img/bee.jpg"
 },
@@ -91,19 +92,19 @@ const animals = [{
 },
 {
     "cName": "公牛",
-    "pinyin": "Gōngniú",
+    "pinyin": "Gōng niú",
     "eName": "Bull",
     "aniImage": "img/bull.jpg"
 },
 {
     "cName": "奶牛",
-    "pinyin": "Nǎiniú",
+    "pinyin": "Nǎi niú",
     "eName": "Cow",
     "aniImage": "img/cow.jpg"
 },
 {
     "cName": "螃蟹",
-    "pinyin": "Pángxiè",
+    "pinyin": "Páng xiè",
     "eName": "Crab",
     "aniImage": "img/crab.jpg"
 },
@@ -115,19 +116,19 @@ const animals = [{
 },
 {
     "cName": "鸽子",
-    "pinyin": "Gēzi",
+    "pinyin": "Gē zi",
     "eName": "Dove",
     "aniImage": "img/dove.jpg"
 },
 {
     "cName": "鸭子",
-    "pinyin": "Yāzi",
+    "pinyin": "Yā zi",
     "eName": "Duck",
     "aniImage": "img/duck.jpg"
 },
 {
     "cName": "大象",
-    "pinyin": "Dàxiàng",
+    "pinyin": "Dà xiàng",
     "eName": "Elephant",
     "aniImage": "img/elephant.jpg"
 },
@@ -145,25 +146,25 @@ const animals = [{
 },
 {
     "cName": "狮子",
-    "pinyin": "Shīzi",
+    "pinyin": "Shī zi",
     "eName": "Lion",
     "aniImage": "img/lion.jpg"
 },
 {
     "cName": "蜥蜴",
-    "pinyin": "Xīyì",
+    "pinyin": "Xī yì",
     "eName": "Lizard",
     "aniImage": "img/lizard.jpg"
 },
 {
     "cName": "美洲驼",
-    "pinyin": "Měizhōutuó",
+    "pinyin": "Měi zhōu tuó",
     "eName": "Llama",
     "aniImage": "img/llama.jpg"
 },
 {
     "cName": "鸵鸟",
-    "pinyin": "Tuóniǎo",
+    "pinyin": "Tuó niǎo",
     "eName": "Ostrich",
     "aniImage": "img/ostrich.jpg"
 },
@@ -175,19 +176,19 @@ const animals = [{
 },
 {
     "cName": "兔子",
-    "pinyin": "Tùzi",
+    "pinyin": "Tù zi",
     "eName": "Rabbit",
     "aniImage": "img/rabbit.jpg"
 },
 {
     "cName": "驯鹿",
-    "pinyin": "Xùnlù ",
+    "pinyin": "Xùn lù ",
     "eName": "Reindeer",
     "aniImage": "img/reindeer.jpg"
 },
 {
     "cName": "绵羊",
-    "pinyin": "Miányáng",
+    "pinyin": "Mián yáng",
     "eName": "Sheep",
     "aniImage": "img/sheep.jpg"
 },
@@ -199,7 +200,7 @@ const animals = [{
 },
 {
     "cName": "火鸡",
-    "pinyin": "Huǒjī",
+    "pinyin": "Huǒ jī",
     "eName": "Turkey",
     "aniImage": "img/turkey.jpg"
 },
@@ -211,34 +212,124 @@ const animals = [{
 },
 {
     "cName": "老虎",
-    "pinyin": "Lǎohǔ",
+    "pinyin": "Lǎo hǔ",
     "eName": "Tiger",
     "aniImage": "img/tiger.jpg"
 },
 {
     "cName": "老鼠",
-    "pinyin": "Lǎoshǔ",
+    "pinyin": "Lǎo shǔ",
     "eName": "Rat",
     "aniImage": "img/rat.jpg"
 },
 {
     "cName": "熊猫",
-    "pinyin": "Xióngmāo",
+    "pinyin": "Xióng māo",
     "eName": "Panda",
     "aniImage": "img/panda.jpg"
 },
 {
     "cName": "猴子",
-    "pinyin": "Hóuzi",
+    "pinyin": "Hóu zi",
     "eName": "Monkey",
     "aniImage": "img/monkey.jpg"
 },
 {
     "cName": "猫头鹰",
-    "pinyin": "Māotóuyīng",
+    "pinyin": "Māo tóu yīng",
     "eName": "Owl",
     "aniImage": "img/owl.jpg"
-}  ]
+},
+{
+    "cName": "青蛙",
+    "pinyin": "Qīng wā",
+    "eName": "Frog",
+    "aniImage": "img/frog.jpg" 
+},
+{
+    "cName": "豹",
+    "pinyin": "Bào",
+    "eName": "Leopard",
+    "aniImage": "img/leopard.jpg" 
+},
+{
+    "cName": "猎豹",
+    "pinyin": "Liè bào",
+    "eName": "Cheetah",
+    "aniImage": "img/cheetah.jpg" 
+},
+{
+    "cName": "北极熊",
+    "pinyin": "Běi jí xióng",
+    "eName": "Polar bear",
+    "aniImage": "img/polarbear.jpg" 
+},
+{
+    "cName": "鳄鱼",
+    "pinyin": "È yú",
+    "eName": "Crocodile",
+    "aniImage": "img/crocodile.jpg" 
+},
+{
+    "cName": "豪猪",
+    "pinyin": "Háo zhū",
+    "eName": "Porcupine",
+    "aniImage": "img/porcupine.jpg" 
+},
+{
+    "cName": "鹰",
+    "pinyin": "Yīng",
+    "eName": "Eagle",
+    "aniImage": "img/eagle.jpg" 
+},
+{
+    "cName": "鲸鱼",
+    "pinyin": "Jīng yú",
+    "eName": "Whale",
+    "aniImage": "img/whale.jpg" 
+},
+{
+    "cName": "短吻鳄",
+    "pinyin": "Duǎn wěn è",
+    "eName": "Alligator",
+    "aniImage": "img/alligator.jpg" 
+},
+{
+    "cName": "鳗鱼",
+    "pinyin": "Mán yú",
+    "eName": "Eel",
+    "aniImage": "img/eel.jpg" 
+},
+{
+    "cName": "大猩猩",
+    "pinyin": "Dà xīng xīng",
+    "eName": "Gorilla",
+    "aniImage": "img/Gorilla.jpg" 
+},
+{
+    "cName": "水母",
+    "pinyin": "Shuǐ mǔ",
+    "eName": "Jellyfish",
+    "aniImage": "img/jellyfish.jpg" 
+},
+{
+    "cName": "犀牛",
+    "pinyin": "Xī niú",
+    "eName": "Rhinoceros",
+    "aniImage": "img/rhinoceros.jpg" 
+},
+{
+    "cName": "蛇",
+    "pinyin": "Shé",
+    "eName": "Snake",
+    "aniImage": "img/snake.jpg" 
+},
+{
+    "cName": "斑马",
+    "pinyin": "Bān mǎ",
+    "eName": "Zebra",
+    "aniImage": "img/zebra.jpg" 
+} ]
 
 const animalsES = [{
     "cName": "狗",
@@ -272,7 +363,7 @@ const animalsES = [{
 },
 {
     "cName": "蝙蝠",
-    "pinyin": "Biānfú",
+    "pinyin": "Biān fú",
     "eName": "Murciélago",
     "aniImage": "img/bat.jpg" 
 },
@@ -284,7 +375,7 @@ const animalsES = [{
 },
 {
     "cName": "蜜蜂",
-    "pinyin": "Mìfēng",
+    "pinyin": "Mì fēng",
     "eName": "Abeja",
     "aniImage": "img/bee.jpg"
 },
@@ -296,19 +387,19 @@ const animalsES = [{
 },
 {
     "cName": "公牛",
-    "pinyin": "Gōngniú",
+    "pinyin": "Gōng niú",
     "eName": "Toro",
     "aniImage": "img/bull.jpg"
 },
 {
     "cName": "奶牛",
-    "pinyin": "Nǎiniú",
+    "pinyin": "Nǎi niú",
     "eName": "Vaca",
     "aniImage": "img/cow.jpg"
 },
 {
     "cName": "螃蟹",
-    "pinyin": "Pángxiè",
+    "pinyin": "Páng xiè",
     "eName": "Cangrejo",
     "aniImage": "img/crab.jpg"
 },
@@ -320,19 +411,19 @@ const animalsES = [{
 },
 {
     "cName": "鸽子",
-    "pinyin": "Gēzi",
+    "pinyin": "Gē zi",
     "eName": "Paloma",
     "aniImage": "img/dove.jpg"
 },
 {
     "cName": "鸭子",
-    "pinyin": "Yāzi",
+    "pinyin": "Yā zi",
     "eName": "Pato",
     "aniImage": "img/duck.jpg"
 },
 {
     "cName": "大象",
-    "pinyin": "Dàxiàng",
+    "pinyin": "Dà xiàng",
     "eName": "Elefante",
     "aniImage": "img/elephant.jpg"
 },
@@ -350,25 +441,25 @@ const animalsES = [{
 },
 {
     "cName": "狮子",
-    "pinyin": "Shīzi",
+    "pinyin": "Shī zi",
     "eName": "León",
     "aniImage": "img/lion.jpg"
 },
 {
     "cName": "蜥蜴",
-    "pinyin": "Xīyì",
+    "pinyin": "Xī yì",
     "eName": "Lagartija",
     "aniImage": "img/lizard.jpg"
 },
 {
     "cName": "美洲驼",
-    "pinyin": "Měizhōutuó",
+    "pinyin": "Měi zhōu tuó",
     "eName": "Llama",
     "aniImage": "img/llama.jpg"
 },
 {
     "cName": "鸵鸟",
-    "pinyin": "Tuóniǎo",
+    "pinyin": "Tuó niǎo",
     "eName": "Avestruz",
     "aniImage": "img/ostrich.jpg"
 },
@@ -380,19 +471,19 @@ const animalsES = [{
 },
 {
     "cName": "兔子",
-    "pinyin": "Tùzi",
+    "pinyin": "Tù zi",
     "eName": "Conejo",
     "aniImage": "img/rabbit.jpg"
 },
 {
     "cName": "驯鹿",
-    "pinyin": "Xùnlù ",
+    "pinyin": "Xùn lù ",
     "eName": "Reno",
     "aniImage": "img/reindeer.jpg"
 },
 {
     "cName": "绵羊",
-    "pinyin": "Miányáng",
+    "pinyin": "Mián yáng",
     "eName": "Oveja",
     "aniImage": "img/sheep.jpg"
 },
@@ -404,7 +495,7 @@ const animalsES = [{
 },
 {
     "cName": "火鸡",
-    "pinyin": "Huǒjī",
+    "pinyin": "Huǒ jī",
     "eName": "Pavo",
     "aniImage": "img/turkey.jpg"
 },
@@ -416,33 +507,123 @@ const animalsES = [{
 },
 {
     "cName": "老虎",
-    "pinyin": "Lǎohǔ",
+    "pinyin": "Lǎo hǔ",
     "eName": "Tigre",
     "aniImage": "img/tiger.jpg"
 },
 {
     "cName": "老鼠",
-    "pinyin": "Lǎoshǔ",
+    "pinyin": "Lǎo shǔ",
     "eName": "Rata",
     "aniImage": "img/rat.jpg"
 },
 {
     "cName": "熊猫",
-    "pinyin": "Xióngmāo",
+    "pinyin": "Xión gmāo",
     "eName": "Panda",
     "aniImage": "img/panda.jpg"
 },
 {
     "cName": "猴子",
-    "pinyin": "Hóuzi",
+    "pinyin": "Hóu zi",
     "eName": "Mono",
     "aniImage": "img/monkey.jpg"
 },
 {
     "cName": "猫头鹰",
-    "pinyin": "Māotóuyīng",
+    "pinyin": "Māo tóu yīng",
     "eName": "Búho",
     "aniImage": "img/owl.jpg"
+},
+{
+    "cName": "青蛙",
+    "pinyin": "Qīng wā",
+    "eName": "Rana",
+    "aniImage": "img/frog.jpg" 
+},
+{
+    "cName": "豹",
+    "pinyin": "Bào",
+    "eName": "Leopardo",
+    "aniImage": "img/leopard.jpg" 
+},
+{
+    "cName": "猎豹",
+    "pinyin": "Liè bào",
+    "eName": "Guepardo",
+    "aniImage": "img/cheetah.jpg" 
+},
+{
+    "cName": "北极熊",
+    "pinyin": "Běi jí xióng",
+    "eName": "Oso polar",
+    "aniImage": "img/polarbear.jpg" 
+},
+{
+    "cName": "鳄鱼",
+    "pinyin": "È yú",
+    "eName": "Cocodrilo",
+    "aniImage": "img/crocodile.jpg" 
+},
+{
+    "cName": "豪猪",
+    "pinyin": "Háo zhū",
+    "eName": "Puercoespín",
+    "aniImage": "img/porcupine.jpg" 
+},
+{
+    "cName": "鹰",
+    "pinyin": "Yīng",
+    "eName": "Águila",
+    "aniImage": "img/eagle.jpg" 
+},
+{
+    "cName": "鲸鱼",
+    "pinyin": "Jīng yú",
+    "eName": "Ballena",
+    "aniImage": "img/whale.jpg" 
+},
+{
+    "cName": "短吻鳄",
+    "pinyin": "Duǎn wěn è",
+    "eName": "Caimán",
+    "aniImage": "img/alligator.jpg" 
+},
+{
+    "cName": "鳗鱼",
+    "pinyin": "Mán yú",
+    "eName": "Anguila",
+    "aniImage": "img/eel.jpg" 
+},
+{
+    "cName": "大猩猩",
+    "pinyin": "Dà xīng xīng",
+    "eName": "Gorila",
+    "aniImage": "img/Gorilla.jpg" 
+},
+{
+    "cName": "水母",
+    "pinyin": "Shuǐ mǔ",
+    "eName": "Medusa",
+    "aniImage": "img/jellyfish.jpg" 
+},
+{
+    "cName": "犀牛",
+    "pinyin": "Xī niú",
+    "eName": "Rinoceronte",
+    "aniImage": "img/rhinoceros.jpg" 
+},
+{
+    "cName": "蛇",
+    "pinyin": "Shé",
+    "eName": "Serpiente",
+    "aniImage": "img/snake.jpg" 
+},
+{
+    "cName": "斑马",
+    "pinyin": "Bān mǎ",
+    "eName": "Cebra",
+    "aniImage": "img/zebra.jpg" 
 }  ]
 
 hamEl.addEventListener("click", function(){

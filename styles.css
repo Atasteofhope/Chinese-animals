@@ -26,7 +26,13 @@ p {
 }
 
 h1 {
-    font-size: 4.8rem;
+    font-size: 6.8rem;
+}
+
+@media (min-width: 675px) {
+    h1 {
+        font-size: 6.5rem;
+    }
 }
 
 .pinyin-paragraph {
@@ -67,8 +73,14 @@ Layout
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5.2em;
+    margin-top: 5.44em;
 }
+@media (min-width: 675px) {
+    .global-buttons {
+        margin-top: 6.2em;
+    }
+}
+
 
 .global-buttons-fixed {
     display: flex;
@@ -85,17 +97,23 @@ Layout
     margin-left: 0.4em;
 }
 
+@media (min-width: 675px) {
+    button {
+        font-size: 1.07rem;
+    }
+}
+
 button {
     background-color: #db3603;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     padding: 0.6em 2em;
-    font-size: 1.07rem;
+    font-size: 1rem;
     font-weight: 700;
     margin: 0.5em 0.3em;
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    width: 7.4em;
+    width: 8.9em;
 }
 
 button:hover,
@@ -115,16 +133,16 @@ button:focus {
 
 .next-button {
     background-color: #2eaa02;
-    padding: 1em 11em;
-    width: 23.3em;
+    padding: 1em 13em;
+    width: 27.5em;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .yellow-button {
     background-color: #f8c11b; 
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    padding: 1em 9em;
-    display: none
+    padding: 1em 11em;
+    display: none;
 }
 
 .next-button:hover,
@@ -159,7 +177,7 @@ header {
 
 @media (min-width: 675px) {
     .correct-message {
-        margin: 0.2em 30em;
+        margin: 1.2em 31em;
         padding: 1.6em 2em;
     }
 }
@@ -179,7 +197,7 @@ header {
 
 @media (min-width: 675px) {
     .incorrect-message {
-        margin: 0.2em 30em;
+        margin: -0.8em 31em;
         padding: 1.6em 2em;
         position: absolute;
         top: 2em;
@@ -244,6 +262,10 @@ nav li {
     cursor: pointer;
 }
 
+.lang-ul li:hover {
+    background-color: #fd835e;
+}
+
 .lang-ul .active {
     background-color: rgb(255 68 68);
 }
@@ -284,8 +306,20 @@ nav li {
         display: none;
     }
 
+    .lang-ul {
+        font-size: 1rem;
+        margin: 0;
+        padding-left: 0.5em;
+        position: absolute;
+        top: 3em;
+        right: 19em;
+    }
+
     .lang-icon {
         margin-left: 1em;
+        position: absolute;
+        top: 2.5em;
+        right: 22em;
     }
 
     .lang-ul li {
@@ -310,5 +344,11 @@ nav a:focus {
     flex-direction: column;
     align-items: center;
     margin-top: -0.50em;
+}
+
+@media (min-width: 675px) {
+    .app-output {
+        margin-top: -1em;}
+    
 }
 
