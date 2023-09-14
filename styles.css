@@ -47,13 +47,14 @@ h1 {
 .question-side {
     display: flex;
     justify-content: center;
-    font-size: 9rem;
+    font-size: 7rem;
     margin: 0.5em 0;
 }
 
 @media (min-width: 675px) {
     .question-side {
         margin: 0.2em 0;
+        font-size: 9rem;
     }
 }
 
@@ -107,7 +108,7 @@ button {
     background-color: #db3603;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     padding: 0.6em 2em;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 700;
     margin: 0.5em 0.3em;
     border: none;
@@ -118,7 +119,7 @@ button {
 
 button:hover,
 button:focus {
-    background-color: #ff3c00;
+    background-color: #ff4d17;
 }
 
 .fa-globe {
@@ -166,8 +167,8 @@ header {
     display: none;
     background-color: #3BDC02;
     color: #ffffff;
-    padding: 1.6em 4em;
-    margin: 0.2em 5em;
+    padding: 1.6em 2em;
+    margin: 0.2em 7em;
     justify-content: center;
     border-radius: 30px;
     font-weight: 700;
@@ -186,8 +187,8 @@ header {
     display: none;
     background-color: #FF4910;
     color: #ffffff;
-    padding: 1.6em 4em;
-    margin: 0.2em 5em;
+    padding: 1.6em 2em;
+    margin: 0.2em 7em;
     justify-content: center;
     border-radius: 30px;
     font-weight: 700;
@@ -211,7 +212,15 @@ header {
     background-color: #ff7600;
     color: #ffffff;
     padding: 0.14em 0;
+    margin-top: -24.6em;
     justify-content: center;
+}
+
+@media (min-width: 675px) {
+    .alert-message{
+    padding: 0.14em 0;
+    margin-top: -26.1em;
+    }
 }
 
 .alert-paragraph {
